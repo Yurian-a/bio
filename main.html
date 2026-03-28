@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuriana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Main">
+        <h1 id="H1">About me</h1>
+        <div class="Info">
+            <table>
+                <tr>
+                    <td>Nick - Yuri; Yuriana; PHT</td>
+                </tr>
+                <tr>
+                    <td>Age - 16 Years old</td>
+                </tr>
+                <tr>
+                    <td>Pronouns - He/Him | Any/Any</td>
+                </tr>
+                <tr>
+                    <td>Gender - Cis male (Femboy)</td>
+                </tr>
+                <tr>
+                    <td>Intrests/Hobbies - General IT, PC building</td>
+                </tr>
+                <tr>
+                    <td>Extras - Im the most boring person ever&trade;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="PC">
+            <p><a href="https://pcpartpicker.com/user/Skibidi_Femboy/saved/#view=K7cw7P" style="font-size: 2vw;">PC Specs</a></p>
+            <table>
+                <tr>
+                    <td>CPU - i3 12100F</td>
+                </tr>
+                <tr>
+                    <td>RAM - 4x8GB DDR4 3600MHz CL17 Patriot Viper</td>
+                </tr>
+                 <tr>
+                    <td>Motherboard - Gigabyte B660m Gaming d3sh ddr4</td>
+                </tr>
+                <tr>
+                    <td>Case - Genesis Irid 505 ARGB V2</td>
+                </tr>
+                 <tr>
+                    <td>PSU - Vero L3 80+ Bronze 700W</td>
+                </tr>
+                <tr>
+                    <td>GPU - RX 6800XT Phantom Gaming</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Contact">
+            <p>My Socials:</p>
+            <p id="Gradient" style="margin-top: -3vw;"><a id="Base" href="discord://-/users/1429203385608962208"><img src="dc.png" alt="Discord" width="2%" height="auto">&nbsp;Yuriana</a></p>
+            <p id="Gradient" style="margin-top: -4vw;"><a id="Base" href="https://discord.gg/zqzqMTRV"><img src="dc.png" alt="Discord" width="2%" height="auto">&nbsp;Join Tetoslavia today!</a></p>
+        </div>
+    </div>
+<div class="particle-container" id="particle-box"></div>
+<script>
+  const container = document.getElementById('particle-box');
+  const particleCount = 75; // Set your desired number here
+
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'particle';
+    
+    // Randomize horizontal position (0 to 100%)
+    const startPos = Math.random() * 100;
+    
+    // Randomize speed (between 3s and 8s)
+    const duration = Math.random() * 5 + 3;
+    
+    // Randomize delay so they don't all start at once
+    const delay = Math.random() * 5;
+    
+    // Randomize size slightly for depth
+    const size = Math.random() * 35 + 10;
+
+    particle.style.left = `${startPos}%`;
+    particle.style.animationDuration = `${duration}s`;
+    particle.style.animationDelay = `${delay}s`;
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+
+    container.appendChild(particle);
+  }
+</script>
+
+</body>
+</html>

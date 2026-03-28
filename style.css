@@ -1,0 +1,84 @@
+* {
+    font-family: Chakra;
+}
+@font-face {
+    font-family: Chakra;
+    src: url(ttf/Chakra_Petch/ChakraPetch-Regular.ttf);
+}
+
+#H1 {
+    background-image: linear-gradient(45deg, #fbaef4 , #fe92c5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+#Base {
+    color: #582556;
+    font-size: 2.5vw;
+}
+.Main {
+    text-align: center;
+    font-size: 2.25vw;
+    text-shadow:2px 2px #994e7a;
+}
+.Info {
+    margin-top: -3vw;
+    text-align: center;
+    font-size: 1.75vw;
+}
+table {
+    margin-top: 2vw;
+    margin: 0px auto;
+}
+
+.PC {
+    font-size: 1.25vw;
+}
+.Contact {
+    margin-top:-2vw;
+    font-size:3vw;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #693761;
+    margin: 0;
+    overflow: hidden;
+    background-image: url('background.png');
+    background-size: 100vw 100vh;
+    backdrop-filter: blur(12.5px);
+}
+.particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    top: -50px;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('particle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: fall linear infinite;
+    filter: blur(1.5px); 
+}
+
+@keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+    }
+}
